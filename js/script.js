@@ -26,7 +26,11 @@ function chamar_procurar (poke_chamar){
     for (let i = 0; i < poke_chamar.abilities.length; i++){
         const idAbility = poke_chamar.abilities[i].ability.url.split('/')[6]
 
-        document.getElementById("habilidades").innerHTML += `<button class='btn btn-danger' onclick= descricaoHabilidade(${idAbility})> ${capitalize(poke_chamar.abilities[i].ability.name)} </button>`
+        document.getElementById("habilidades").innerHTML += `
+        <div class="col-lg-4 col-sm-12">
+            <button class='btn btn-danger' onclick= descricaoHabilidade(${idAbility})> ${capitalize(poke_chamar.abilities[i].ability.name)} </button>
+        </div>
+        `
     }
 
     document.getElementById("nomePokemon").value = ''

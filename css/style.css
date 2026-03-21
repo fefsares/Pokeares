@@ -179,7 +179,7 @@ body{
     border-bottom: 5px  rgb(0, 0, 0) solid;
 }
 #btn-voltar{
-    position: absolute;
+    position: fixed;
     right: 10px;
     top: 10px;
 }
