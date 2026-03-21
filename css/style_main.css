@@ -1,0 +1,77 @@
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.container{
+    max-width: 800px;
+}
+a{
+    display: flex;
+    align-items: flex-start; 
+    aspect-ratio: 1/1;
+    text-decoration: none;
+    padding: 30px 5px 0 30px;
+    border-radius: 20px;
+    margin: 5px;
+    font-size: 2em;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    transition: transform 0.15s ease;
+}
+img{
+    margin-top: auto;
+    max-height: 250px;
+    width: auto;
+    align-self: flex-end;
+}
+@media (max-width: 1024px){
+    a{
+        aspect-ratio: 3/1
+    }
+    img{
+        max-height: 200px;
+    }
+}
+
+#procurar{
+    background: var(--electric);
+    color: var(--eletricDark);
+    animation: fadeLeft 0.5s ease;
+}
+#procurar:hover{
+    transform: translateX(-20px) rotate(-3deg) scale(1.1);
+    z-index: 1;
+}
+
+#quiz{
+    background: var(--fire);
+    color: var(--fireDark);
+    animation: fadeUp 0.5s ease;
+}
+#quiz:hover{
+    transform: translateY(-20px) rotate(3deg) scale(1.1);
+    z-index: 1;
+}
+
+#todos{
+    background: var(--water);
+    color: var(--waterDark);
+    animation: fadeDown 0.5s ease;
+}
+#todos:hover{
+    transform: translateY(20px) rotate(-3deg) scale(1.1);
+    z-index: 1;
+}
+
+#stats{
+    background: var(--grass);
+    color: var(--grassDark);
+    animation: fadeLeft 0.5s ease;
+}
+#stats:hover{
+    transform: translateX(20px) rotate(3deg) scale(1.1);
+    z-index: 1;
+}

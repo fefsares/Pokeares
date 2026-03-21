@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Quiz</title>
+        <link rel="icon" type="image/x-icon" href="assets/icon.png">
+
+        <!--Font Sora-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+        <!--Font Awesome-->
+        <script src="https://kit.fontawesome.com/ffda54e860.js" crossorigin="anonymous"></script>
+        
+        <!--Fonte Pixel-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+        <!--Link bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <!-- CDN do Bootstrap Icons -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/style_quiz.css" rel="stylesheet">
+
+        <!--PokeAPI-->
+        <script src="https://unpkg.com/pokeapi-js-wrapper/dist/index.js"></script>
+
+        <script src="js/script.js"></script>
+
+        <!--html5shiv-->
+        <!--[if lt IE 9]>
+            <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+        <![endif]-->
+
+
+    </head>
+    <body>
+        <section>
+            <div class="container d-flex align-items-center justify-content-center flex-column text-center" style="height: 100vh">
+                <a id="btn-voltar" class="btn btn-danger" href="index.html">Voltar</a>
+                <div id="quiz" class="d-none">
+                    <h1 id="resultado"></h1>
+                    <div id="name_img">
+                        <h1 id="poke_name" class="display-1"></h1>
+                        <div id="poke_img"></div>
+                    </div>
+                    <div id="btns-quiz"></div>
+                    <button id="btn-finalizarQuiz" class="btn btn-danger" onclick="terminarQuiz()">Terminar</button>
+                </div>
+                <button id="btn-quiz" class="btn btn-dark" onclick="randomQuiz()">Começe um quiz!</button>
+            </div>
+        </section>
+        <!--Links do bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

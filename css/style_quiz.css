@@ -1,0 +1,48 @@
+body{
+    padding: 50px;
+}
+.btn{
+    font-size: 1em;
+    line-height: 2;
+}
+#btn-finalizarQuiz{
+    display: none;
+    margin-top: 20px;
+}
+.vibrando{
+    animation: vibrar 0.1s linear infinite;
+}
+#btns-quiz{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+#btn-quiz{
+    height: 100px;
+    border-radius: 20px;
+    border-bottom: 10px  rgb(0, 0, 0) solid;
+    font-size: 1.5em;
+    padding: 0 20px;
+    transform: translateY(-50%);
+}
+#quiz{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#name_img{
+    padding: 30px;
+    border-radius: 50px;
+}
+.resultado_animacao{
+    animation: resultado 0.2s linear ;
+}
+#resultado {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-15deg);
+  font-size: 10em;
+  z-index: 1;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Procurar</title>
+        <link rel="icon" type="image/x-icon" href="assets/icon.png">
+
+        <!--Font Sora-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+        <!--Font Awesome-->
+        <script src="https://kit.fontawesome.com/ffda54e860.js" crossorigin="anonymous"></script>
+        
+        <!--Fonte Pixel-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+        <!--Link bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <!-- CDN do Bootstrap Icons -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/style_procurar.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+
+        <!--PokeAPI-->
+        <script src="https://unpkg.com/pokeapi-js-wrapper/dist/index.js"></script>
+
+        <script src="js/script.js"></script>
+
+        <!--html5shiv-->
+        <!--[if lt IE 9]>
+            <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+        <![endif]-->
+        
+    </head>
+    <body>
+        <section>
+            <div id="popup" class="popup">
+                <div id="popup-content" class="popup-content">
+                    <h3 id="nameAbility"></h3>
+                    <p id="descricaoAbility"></p>
+                    <button class="btn btn-danger" onclick="fechar_habilidade()">Fechar</button>
+                </div>
+            </div>
+
+            <div class="container d-flex align-items-center justify-content-center flex-column text-center" style="min-height: 100vh">
+                <a id="btn-voltar" class="btn btn-danger" href="index.html">Voltar</a>
+
+                <div id="poke_infos" class="row hidden">
+                    <div id="name_img_id" class="infos col-md-6 col-sm-12">
+                        <h1 id="poke_name" ></h1>
+                        <p class="h4" id="poke_id"></p>
+                        <div id="poke_img"></div> <!--img aqui dentro com js-->
+                    </div>
+                    <div id="stats" class="infos col-md-6 col-sm-12">
+                        <div class="stat">
+                            <h4>HP: </h4>
+                            <p class="p_procu_stat"></p>
+                        </div>
+    
+                        <div class="stat">   
+                            <h4>Ataque: </h4>
+                            <p class="p_procu_stat"></p>
+                        </div>
+
+                        <div class="stat">
+                            <h4>Defesa: </h4>
+                            <p class="p_procu_stat"></p>
+                        </div>
+                        
+                        <div class="stat">
+                            <h4>Ataque especial: </h4>
+                            <p class="p_procu_stat"></p>
+                        </div>
+
+                        <div class="stat">
+                            <h4>Defesa especial: </h4>
+                            <p class="p_procu_stat"></p>
+                        </div>
+
+                        <div class="stat">
+                            <h4>Velocidade: </h4>
+                            <p class="p_procu_stat"></p>
+                        </div>
+
+                        <div class="mt-5">
+                            <h4>Habilidades: </h4>
+                            <div id="habilidades"></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="m-5">
+                    <form action="">
+                        <input class="form-control" id="nomePokemon" type="text" placeholder="Digite um pokémon...">
+                    </form>
+                </div>
+                <div>
+                    <button class="btn btn-danger" onclick="buscar()">Buscar</button>
+                    <button class="btn btn-dark" onclick="randomPoke()">Random</button>
+                </div>
+            </div>
+        </section>
+        <!--Links do bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

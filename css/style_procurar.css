@@ -1,0 +1,77 @@
+#poke_infos{
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    width: 100%;
+}
+#name_img_id{
+    padding: 30px;
+    border-radius: 50px;
+}
+#poke_img{
+    overflow: hidden;
+}
+#poke_img img{
+    width: 400px;
+    height: auto;
+}
+
+/*STATS*/
+#stats{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px 25px;
+}
+.stat{
+    display: flex;
+    justify-content: space-between;
+}
+.p_procu_stat{
+    margin-left: 15px;
+    font-size: 2em;
+}
+
+#habilidades{
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+
+/*POPUP*/
+.popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20%;
+
+    pointer-events: none;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+.popup.ativo{
+   opacity: 1;
+   pointer-events: auto;
+}
+.popup-content{
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    transition: all 0.5s ease;
+    transform: rotate(-10deg);
+    scale: 0.3;
+}
+.popup-content.ativo{
+    transform: rotate(0deg);
+    scale: 1.1; 
+}

@@ -1,0 +1,37 @@
+body{
+    padding: 20px;
+}
+
+.card_geracao{
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    height: 220px;
+    width: 150px;
+    
+    transition: transform 0.3s ease;
+}
+
+.card_geracao:hover{
+    transform: scale(1.2);
+}
+.card_geracao img{
+    width: 100%;
+    height: 100%;
+}
+.name_geracao{
+    font-size: 0.8em;
+}
+.todos_pokemons{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
