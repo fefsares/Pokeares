@@ -39,3 +39,12 @@
         width: 130px;
     }
 }
+@media (max-width: 700px) {
+    .card_geracao {
+        height: 170px;
+        width: 100px;
+    }
+    .name_geracao{
+        font-size: 0.6em;
+    }
+}
