@@ -1,5 +1,5 @@
 body{
-    padding: 50px;
+    padding: 100px 0;
 }
 .btn{
     font-size: 1em;
@@ -45,4 +45,10 @@ body{
   transform: translate(-50%, -50%) rotate(-15deg);
   font-size: 10em;
   z-index: 1;
+}
+ 
+@media (max-width: 1000px) {
+    #resultado {
+        font-size: 4em;
+    }
 }

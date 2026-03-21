@@ -1,5 +1,5 @@
 body{
-    padding: 20px;
+    padding: 100px;
 }
 
 .card_geracao{
@@ -34,4 +34,11 @@ body{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 1000px) {
+    .card_geracao {
+        height: 200px;
+        width: 130px;
+    }
 }
