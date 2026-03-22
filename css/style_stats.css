@@ -34,6 +34,28 @@
 .card-poke img{
     margin: 10px;
 }
+.card-poke{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .container{
     max-width: 2000px;
+}
+#poke_name1, #poke_name2, #poke_id1, #poke_id2{
+    font-size: 2.5em;
+}
+@media (max-width: 1000px) {
+    .card_poke{
+        height: 200px;
+        width: 130px;
+    }
+    .card-poke img{
+        height: auto;
+        width: 190px;
+    }
+    #poke_name1, #poke_name2, #poke_id1, #poke_id2{
+        font-size: 1em;
+    }
 }

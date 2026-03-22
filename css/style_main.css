@@ -75,3 +75,8 @@ img{
     transform: translateX(20px) rotate(3deg) scale(1.1);
     z-index: 1;
 }
+@media (max-width: 1000px) {
+    a{
+        font-size: 1.5em;
+    }
+}

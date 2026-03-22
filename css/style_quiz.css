@@ -43,9 +43,22 @@
   font-size: 10em;
   z-index: 1;
 }
+#name_img{
+    margin-top: 100px;
+}
  
 @media (max-width: 1000px) {
     #resultado {
         font-size: 4em;
     }
+    #name_img{
+        height: 400px;
+        width: 330px;
+    }
+    #name_img img{
+        height: auto;
+        width: 180px;
+    }
 }
+
+
